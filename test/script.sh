@@ -1,7 +1,9 @@
+#!/bin/bash
 
-echo "Hello World!" 
+echo "Hello World!" >> hello.txt 
 
-adding another file to my script
+file="output.txt"
 
-adding second line to my script
-
+echo "Script started at $(date)" >> "$file"
+echo "Writing multiple lines..." >> "$file"
+echo "Done." >> "$file"
